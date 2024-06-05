@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: radial-gradient(#eee, #ccc);
+}
+
+/* HEADER STYLES */
+
+#header {
+    height: 150px;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    justify-content: space-between;
+}
+
+#text {
+    width: 60%;
+}
+
+#modes {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#scores {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    text-align: right;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    color: hsl(0, 80%, 45%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#subtitle {
+    color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+}
+
+#rulesBtn {
+    background-color: hsla(0, 0%, 100%, 10%);
+    color: #eee;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#rulesBtn:hover {
+    background-color: hsla(0, 0%, 100%, 20%);
+}
+
+.modeBtn {
+    background-color: hsl(0, 80%, 45%);
+    color: #eee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.modeBtn:hover {
+    background-color: #eee;
+    color: hsl(0, 80%, 45%);
+}
+
+.modeBtn:active {
+    background-color: #aaa;
+}
+
+.scorebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.scorebox h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* MAIN CONTENT STYLES */
+
+#card-box {
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(8, auto);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #444;
+    height: 12vh;
+    width: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: hsl(0, 80%, 45%);
+    transition: 0.1s;
+}
+
+.card:active {
+    background-color: hsla(0, 80%, 45%, 75%);
+}
+
+.card p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #eee;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+
